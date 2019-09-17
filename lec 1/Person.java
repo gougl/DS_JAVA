@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements HumanActivity{
     // data fields
     private String name;
     private int age;
@@ -53,4 +53,16 @@ public class Person {
         System.out.println("Person drink");
     }
 
+    //override methods in the interface
+    @Override
+    public void play() {
+        System.out.println("Person play");
+    }
+
+    @Override
+    public boolean married() {
+        if(this.age < 22)
+            return false;
+        return true;
+    }
 }
