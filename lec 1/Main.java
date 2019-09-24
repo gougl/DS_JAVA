@@ -41,17 +41,37 @@ public class Main {
 //        e.play();
 //        System.out.println(e.married());
 
-        MyArray<String> myarray = new MyArray<String>();
-        myarray.insert(0, "Roj");
-        myarray.insert(1, "AI");
-        myarray.insert(2, "An");
-
-        myarray.display();
-        System.out.println("Mr. Han will insert on Position 1");
-        myarray.insert(1,"Han");
-        myarray.display();
-        System.out.println("delete Position 2");
-        System.out.println(myarray.delete(2));
+//        MyArray<String> myarray = new MyArray<String>();
+//        myarray.insert(0, "Roj");
+//        myarray.insert(1, "AI");
+//        myarray.insert(2, "An");
+//
+//        myarray.display();
+//        System.out.println("Mr. Han will insert on Position 1");
+//        myarray.insert(1,"Han");
+//        myarray.display();
+//        System.out.println("delete Position 2");
+//        System.out.println(myarray.delete(2));
         //myarray.display();
+
+//        MyArrayAgain<String> a = new MyArrayAgain<>();
+//        a.insert(0,"Yinlimu");
+//        a.insert(0,"Hu");
+//        a.insert(0,"An");
+//        a.insert(0,"Aimond");
+//        a.traverse();
+//
+//        System.out.println("The delte is " + a.delete(2));
+//        a.traverse();
+
+        MyLinkedList<String> a = new MyLinkedList<>();
+        a.addFirst("Ai");
+        a.addFirst("An");
+        a.addFirst("Ma");
+        a.display();
+        node<String> del_node = a.delFirst();
+        System.out.println("delete the node is "+del_node.data);
+        a.display();
+
     }
 }
