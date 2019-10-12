@@ -1,5 +1,6 @@
 import javax.sound.midi.SysexMessage;
 import java.awt.*;
+import java.util.Scanner;
 
 public class Main {
 
@@ -74,7 +75,7 @@ public class Main {
 //        System.out.println("delete the node is "+a.delFirst());
 //        a.display();
 
-        MyArrayStack<String> s = new MyArrayStack<>();
+/*        Stack<String> s = new MyLinkedStack<>();
         s.push("Abus");
         s.push("An");
         s.push("Chen");
@@ -82,6 +83,27 @@ public class Main {
         System.out.println(s.pop());
         System.out.println(s.getTop());
         System.out.println(s.getTop());
+
+        Stack<Integer> binarycode = new MyLinkedStack<>();
+        Scanner input = new Scanner(System.in);
+        Integer x = input.nextInt();
+        while(x!=0){
+            binarycode.push(x%2);
+            x = x/2;
+        }
+        while(binarycode.isEmpty()!=true){
+            System.out.println(binarycode.pop());
+        }
+
+ */
+        Queue<String> qu = new MyArrayQueue<>();
+        qu.enqueue("An");
+        qu.enqueue("Hu");
+        qu.enqueue("Raj");
+        qu.enqueue("Ai");
+        while(qu.isEmpty()!=true){
+            System.out.println(qu.outqueue());
+        }
 
     }
 }
